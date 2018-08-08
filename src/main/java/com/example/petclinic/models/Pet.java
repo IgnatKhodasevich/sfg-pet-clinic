@@ -1,11 +1,38 @@
 package com.example.petclinic.models;
 
-import javax.persistence.Entity;
+import java.time.LocalDate;
 
 /**
  * Created by Ignat on 08.08.2018.
  */
-@Entity
+
 public class Pet {
-    private String type;
+
+    private PetType type;
+    private Owner owner;
+    private LocalDate birthday;
+
+    public PetType getType() {
+        return type;
+    }
+
+    public void setType(PetType type) {
+        this.type = type;
+    }
+
+    public Owner getOwner() {
+        return owner;
+    }
+
+    public void setOwner(Owner owner) {
+        this.owner = owner;
+    }
+
+    public LocalDate getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(LocalDate birthday) {
+        this.birthday = birthday;
+    }
 }
