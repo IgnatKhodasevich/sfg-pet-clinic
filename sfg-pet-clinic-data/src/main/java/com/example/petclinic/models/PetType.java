@@ -1,10 +1,7 @@
 package com.example.petclinic.models;
 
 
-/**
- * Created by Ignat on 08.08.2018.
- */
-public class PetType {
+public class PetType extends BaseEntity {
 
     private PetType petType;
     private Owner owner = new Owner();
